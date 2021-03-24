@@ -1,168 +1,241 @@
 body div{
-    margin-left: 130px;
-    font-size: 30px;
+    /* margin-left: 10px;
+   
+    width: 100%; */
+    font-size: 70px;
     font-weight: bold;
-    color: dimgray;
-
-
+    color: rgb(7, 7, 7);
+    text-align: center;
 }
 
+/*  mobile  320px — 480px (max-width: 450px)*/
 
-div p{
-    margin:revert;
-    
-}
-
-.fir{
-    border: 1px solid #a31313;
-      width:480px;
-}
-#a{
-    height: 75px;
-    background-color: lightcoral;
-    
-}
-#b{
-    height: 150px;
-    background-color: lightgreen;
-   
-}
-#c{
-    height: 125px;
-    background-color: lightslategray;
-   
-}
-#d{
-    height: 125px;
-    background-color: maroon;
-    
-}
-p{text-align: center;}
-
-.sec{
-    border: 1px solid #0a0000;
-    width: 240px;
-    height: 250px;
-
-}
-#e{
-    float: left;
-    background-color: mediumblue;
-}
-#f{
-    float: left;
-    margin: auto;
-    background-color: orangered;
-}
-#g{
-    float: left;
-    margin-top: 250px;
-    margin-left: 130px;
-    position: absolute;
-    background-color: orchid;
-}
-#h{ 
-    margin: 0px;
-    margin-top: 250px;
-    float: left;
-    position: absolute;
-    margin-left: 370px; 
-    background-color: #216402; 
-}
-#i{
-background-color: black;
-}
-
-.ther{
-    border: 1px solid #1392a3;
-    width:480px;
-    height: 80px;
-    margin-top: 500px;
+@media  (min-width: 480px) and (max-width: 736px)  {
+    body{
+        width: 100%;
     }
 
-
-
-@media(min-width : 768px ){
-
-    .fir{
-        border: 1px solid #216402;
-        width:960px;
-  }
-    
-  #a{
-    height: 100px;
-
-    background-color: violet;
-    
+    .all{
+        display:grid;
+		width: 480px;
+		margin: 0 auto;
+		margin-left: calc((100% - 480px) /2);
+		grid-template-columns: 240px 240px;
+		grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+        } 
+#a{
+    width: 100%;
+        grid-area: 1 / 1 / 1 / 3;
+        height: 75px;
+        background-color: blue;
 }
-
 #b{
-    width: 200px;
-    height: 600px;
-    background-color: yellow;
-    position: absolute;
+    width: 100%;
+    grid-area: 2 / 1/ 2 / 3;
+    line-height: 150px;
+    background-color: rgb(255, 0, 255);
 }
-
 #c{
-    width: 380px;
-    height: 200px;
-    float: left;
-    margin-left: 330px;
-    background-color: teal;
+    width: 100%;
+    grid-area: 3 / 1 / 3 / 3;
+    line-height: 125px;
+    background-color: rgb(85, 4, 4);
 }
-
 #d{
-    width: 380px;
-    height: 200px;
-    margin-left: 710px;
-    position: absolute;
-    float: right;
-background-color: purple;
+    width: 100%;
+    grid-area: 4 / 1 /4 / 3;
+    line-height: 125px;
+    background-color: rgb(0, 255, 255);
 }
 #e{
-    width: 190px;
+    width: 100%;
+    background-color: crimson;
     height: 250px;
-    margin-left: 330px;
-
-    margin-top: 200px;
-    position: absolute;
-    float: left;
-    background-color: indianred;
-    margin-top: 200px;
 }
 #f{
-
-    width: 190px;
+    grid-area: 5 / 1 /5 ;
+    background-color: darkgrey;
+    width: 100%;
     height: 250px;
-    margin-left: 520px;
-    margin-top: 200px;
-    position: absolute;
     float: right;
-    background-color: darkblue;
 }
 #g{
-    width: 190px;
+    background-color: darkorange;
+    width: 100%;
     height: 250px;
-    float: left;
-    margin-top: 200px;
-    position: absolute;
-    margin-left: 710px;
-    background-color: lightslategrey;
 }
 #h{
-    width: 190px;
+background-color: darkorchid;
+ width: 100%;
     height: 250px;
-    margin-left: 900px;
-    margin-top: 200px;
-    position: absolute;
-    float: right;
-    background-color: darkred;
 }
 #i{
-    width: 760px;
-    height: 150px; 
-    margin-left: 330px;
-    margin-top: 450px;
-    background-color: darkviolet;
+    background-color: greenyellow;
+    width: 100%;
+    height: 60px;
+    grid-area: 7 / 1 / 7 / 3;
 }
 }
+/* ========================================================== */
+/* (min-width: 768px) */
+@media  (min-width: 960px){
+    body {
+        /* width: 100%; */
+        /* height: 100%; */
+        
+    }
+
+ .all{
+    
+    display: grid;
+    width: 737px;
+    
+    /* margin: 0 auto; */
+    /* margin-left: calc((100% - 737px) /2); */
+    
+    } 
+    #a{
+        grid-column: 1 / 6;
+        width: 100%;
+        line-height: 75px;
+        background-color: #DE3163;
+}
+   #b{
+    line-height: 150px;
+    grid-column: 1 / 2;
+    grid-row: 2 /4;
+    background-color: #00ccff;
+    }
+   
+ #c{
+background-color: yellow;
+/* height: 900px; */
+grid-column: 2 / 4;
+line-height: 125px;
+
+
+    }
+     
+    #d{
+        background-color: blue;
+        /* height: 900px; */
+        line-height: 125px;
+grid-column: 4 / 6;
+    }
+
+    #e{
+        background-color: brown;
+        /* height: 400px; */
+        line-height: 250px;
+        grid-column: 2 / 2;
+       
+       
+    }
+    #f{
+        background-color: rgb(80, 255, 147);
+        /* height: 400px; */
+        line-height: 250px;
+        grid-column: 3/ 3;
+       
+    }
+    #g{
+        background-color: black;
+        /* height: 400px; */
+        line-height: 250px;
+        grid-column: 4 / 4;
+    }
+    #h{
+        background-color: chartreuse;
+        /* height: 400px; */
+        line-height: 250px;
+        grid-column: 5 / 5;
+    }
+    #i{
+        background-color: rgb(8, 129, 123);
+        /* width: 100%; */
+        grid-column: 1 / 6;
+        line-height: 75px;
+    }
+
+} 
+
+/* 
+Common Breakpoints:
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+
+
+/* tablat  (min-width: 449px) and (max-width: 767px)*/
+ @media (min-width: 737px) and (max-width: 959px){
+ body {
+        width: 100%;
+        
+    }
+
+ .all{
+    display: flex;
+    display: grid;
+    
+    } 
+    #a{
+        width: 100%;
+       
+        grid-column: 1 / 6;
+        line-height: 75px;
+        background-color: #00FF00;
+}
+   #b{
+    line-height: 150px;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 /4;
+    background-color: #FF0000;
+    }
+   
+ #c{
+background-color: #0000FF;
+line-height: 125px;
+grid-column: 2 / 4;
+
+    }
+     
+    #d{
+        background-color: #00FFFF;
+        line-height: 125px;
+grid-column: 4 / 6;
+    }
+
+    #e{
+        background-color: #800080;
+        line-height: 250px;
+        grid-column: 2 / 2;
+       
+       
+    }
+    #f{
+        background-color: rgb(80, 255, 147);
+        line-height: 250px;
+        grid-column: 3/ 3;
+       
+    }
+    #g{
+        background-color: #FFFF00;
+        line-height: 250px;
+        grid-column: 4 / 4;
+    }
+    #h{
+        background-color: #808080;
+        line-height: 250px;
+        grid-column: 5 / 5;
+    }
+    #i{
+        background-color: #FF7F50;
+        width: 100%;
+       
+        grid-column: 1 / 6;
+        line-height: 75px;
+    }
+} 
