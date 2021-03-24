@@ -1,10 +1,13 @@
 *{
     box-sizing: border-box;
 }
-.all{
-    
-     width: 960px;
-     height: 700px;
-     margin: auto;
+.fir{
+    max-width: 960px;
 
- }
+}
+.sec{
+    max-width: 960px;
+}
+.ther{
+    max-width: 960px;
+}
